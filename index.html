@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ritesh ❤️ Sanvi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="is-loading">
+    <!-- LOADING SCREEN -->
+
+<section id="loadingScreen">
+
+    <div class="loadingBox">
+
+        <h1 class="loadingTitle">
+
+    <span class="titleHeart">❤️</span>
+
+    <span class="titleName">Ritesh</span>
+
+    <span class="titleHeart">❤️</span>
+
+    <span class="titleName">Sanvi</span>
+
+    <span class="titleHeart">❤️</span>
+
+</h1>
+
+        <p class="loadingText">
+            A Story Written By Destiny...
+        </p>
+
+        <div class="loader"></div>
+
+    </div>
+
+</section>
+    <!-- INTRO PAGE -->
+
+<section id="introScreen">
+
+    <div class="introCard">
+
+        <h1>❤️ Welcome My Love ❤️</h1>
+
+        <h2>Our Journey Begins Here</h2>
+
+        <p>
+            Every love story is beautiful,
+            but ours is my favourite.
+        </p>
+
+        <button onclick="startJourney()">
+            Begin Our Journey ❤️
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- BACKGROUND MUSIC -->
+
+    <audio id="loveSong" loop>
+        <source src="music/loveSong.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- FLOATING EFFECTS -->
+
+    <div id="hearts"></div>
+    <div id="sparkles"></div>
+
+    <!-- PASSWORD SCREEN -->
+
+    <section id="lockScreen">
+
+        <div class="lockBox">
+
+            <div class="heart">❤️🔒</div>
+
+            <h1>Only For You Sanvi ❤️</h1>
+
+            <p>
+                Enter our secret code to unlock our memories
+            </p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter Password">
+
+            <button onclick="unlockWebsite()">
+                Unlock ❤️
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </section>
+
+    <!-- DOOR ANIMATION -->
+
+    <section id="doorScene">
+
+       <div class="door">
+
+    <div class="magicLight"></div>
+
+    <div class="leftDoor"></div>
+
+    <div class="rightDoor"></div>
+
+    <div class="doorHandle leftHandle"></div>
+
+    <div class="doorHandle rightHandle"></div>
+
+    <div class="doorText">
+        ❤️ Baby love you so much Thank you so much for coming into my life... ❤️
+    </div>
+
+</div>
+    </section>
+
+    <!-- MAIN WEBSITE -->
+
+    <main id="mainPage">
+    <!-- ==========================
+LOVE LETTER
+========================== -->
+
+<section id="storySection" class="chapter">
+
+    <div class="loveCard">
+
+        <h1>
+            Happy First Anniversary Baby ❤️
+        </h1>
+
+        <h2>
+            Ritesh ❤️ Sanvi
+        </h2>
+
+        <div id="loveMessage"></div>
+
+        <p class="date">
+            September 9 ❤️
+        </p>
+
+    </div>
+
+</section>
+<!-- ==========================
+TIMELINE
+========================== -->
+
+<section id="timelineSection" class="chapter" style="display:none;">
+
+    <section id="timeline">
+
+        <h1>
+            Our Love Journey ❤️
+        </h1>
+
+        <div id="timelineSlider">
+
+            <!-- Timeline cards will be added by JavaScript -->
+
+        </div>
+
+    </section>
+
+</section>
+<!-- ==========================
+PHOTO GALLERY
+========================== -->
+
+<section id="gallerySection" class="chapter" style="display:none;">
+
+    <section id="gallery">
+
+        <h1>
+            Our Beautiful Memories 📸❤️
+        </h1>
+
+        <div class="photoFrame">
+
+            <img
+                id="memoryImage"
+                src="images/photo1.jpg"
+                alt="Memory">
+
+            <p id="photoCaption">
+                Our First Memory ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- ==========================
+PROPOSAL
+========================== -->
+
+<section id="proposalSection" class="chapter" style="display:none;">
+
+    <section id="proposal">
+
+        <h1>  Will You Marry Me Baby ?  </h1>
+
+        <p class="proposalText">
+            Every moment with you has been magical.<br>
+            Will you stay with me forever baby ? ❤️
+        </p>
+        <p class="tapToOpen">Tap the ring box to open ❤️</p>
+        <div class="ringBox" id="tapRingBox">
+
+    <div class="ringLid"></div>
+
+    <div class="ringBase">
+
+        <div class="ring">
+
+            <div class="diamond"></div>
+
+       </div>
+
+       </div>
+
+       </div>
+
+        <div class="proposalButtons">
+
+            <button id="yesBtn">
+                YES ❤️
+            </button>
+
+            <button id="noBtn">
+                NO 😢
+            </button>
+
+        </div>
+
+    </section>
+
+</section>
+<!-- ==========================
+CELEBRATION
+========================== -->
+
+<section id="celebrationSection" class="chapter" style="display:none;">
+
+    <section id="celebration">
+
+        <h1>🎉 SHE SAID YES ❤️</h1>
+
+        <h2>
+            Forever Begins Today 💍
+        </h2>
+
+        <p>
+            Thank you for making me the happiest person in the world.<br>
+            I promise to love you today, tomorrow and forever. ❤️
+        </p>
+
+        <div id="celebrationHearts"></div>
+
+    </section>
+
+</section>
+<!-- FINAL VIDEO SECTION -->
+
+<section id="videoSection" class="chapter" style="display:none;">
+
+    <div class="finalVideoBox">
+
+        <video id="finalVideo" controls>
+            <source src="video/finalVideo.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>    
