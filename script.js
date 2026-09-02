@@ -131,8 +131,6 @@ if(entered === password){
 
 let song =
 document.getElementById("loveSong");
-
-
 song.play().catch(() => {
     console.log("Music will start when the user interacts with the page.");
 });
